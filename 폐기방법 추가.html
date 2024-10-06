@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연수구 폐의약품 지도 연습판</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* 가로 중앙 정렬 */
+            justify-content: flex-start; /* 위쪽 정렬 */
+            margin: 0; /* 기본 마진 제거 */
+            text-align: center; /* 텍스트 중앙 정렬 */
+            font-family: Arial, sans-serif; /* 폰트 설정 */
+        }
+
+        nav {
+            background-color: #4CAF50; /* 네비게이션 바 배경색 */
+            padding: 10px;
+            width: 100%;
+            position: fixed; /* 고정 */
+            top: 0; /* 상단에 위치 */
+            z-index: 1000; /* 다른 요소 위에 표시 */
+        }
+
+        nav ul {
+            list-style-type: none; /* 리스트 스타일 제거 */
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline; /* 가로로 나열 */
+            margin-right: 15px; /* 간격 추가 */
+        }
+
+        nav a {
+            color: white; /* 링크 색상 */
+            text-decoration: none; /* 밑줄 제거 */
+        }
+
+        section {
+            margin-top: 100px; /* 네비게이션 바 아래 공간 증가 */
+            padding: 20px;
+            background-color: #f9f9f9; /* 섹션 배경색 */
+            border-radius: 8px; /* 모서리 둥글게 */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+            width: 90%; /* 섹션 너비 설정 */
+            max-width: 800px; /* 최대 너비 설정 */
+        }
+
+        footer {
+            text-align: center; /* 가운데 정렬 */
+            padding: 10px;
+            background-color: #f1f1f1; /* 배경색 */
+            position: relative; /* 하단 고정 */
+            bottom: 0;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 24px; /* 제목 크기 */
+            margin: 10px 0; /* 제목 간격 */
+        }
+
+        h2 {
+            font-size: 18px; /* 소제목 크기 줄이기 */
+            margin: 10px 0; /* 간격 설정 */
+        }
+
+        h3 {
+            font-size: 18px; /* 작은 제목 크기 */
+            margin: 10px 0; /* 간격 설정 */
+        }
+
+        p {
+            color: blue; /* 글자 색상 */
+        }
+
+        img {
+            max-width: 100%; /* 이미지 크기를 화면에 맞춤 */
+            height: auto; /* 비율 유지 */
+        }
+
+        @media (max-width: 600px) {
+            body {
+                flex-direction: column; /* 모바일에서 세로 방향 정렬 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#section1">소개</a></li>
+            <li><a href="#section2">지도 보기</a></li>
+            <li><a href="#section3">처리방법</a></li>
+            <li><a href="#section4">문의하기</a></li>
+        </ul>
+    </nav>
+
+    <section id="section1">
+        <h1>소개</h1>
+        <h2>저희는 연수구 약통 히어로즈 입니다.</h2>
+        <h2>올바른 폐의약품 수거 방법을 알고계시나요?</h2>
+        <h2>폐의약품이란 유효기간이 지났거나 변질, 부패 등으로 사용할 수 없는 의약품을 말합니다.</h2>
+        <h2>폐의약품은 약국뿐만 아니라 우체통, 주민센터에서도 수거가 가능해요. 이에 대해 저희가 지도로 만들었습니다!</h2>
+    </section>
+
+    <section id="section2">
+        <h2>지도 보기</h2>
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAxMDZfMjE1%2FMDAxNzA0NDk0Nzg0Njk3.WQol5iAROgqIp4ruXst4qyT9W4vOrj_t9aIn9xPMaHAg.UlK63cflQCm2a15Ad3OvDl7-8pfi0ZhndINNiPN_uQAg.JPEG.arboszkmhdwcy8f6%2F2.jpg&type=sc960_832.jpg" alt="연수구 지도">
+    </section>
+
+    <section id="section3">
+        <h2>처리방법</h2>
+        <h3>알약 : 알약만 따로 모아 배출한다.</h3>
+        <h3>가루약 : 약포지 상태 그대로 배출한다.</h3>
+        <h3>물약 및 시럽 : 하나의 용기에 모두 모아 새지 않도록 밀봉 후 배출한다.</h3>
+    </section>
+
+    <section id="section4">
+        <h2>문의하기</h2>
+        <p>궁금한 사항은 아래의 연락처로 문의해 주세요.</p>
+    </section>
+
+    <footer>
+        <p>© 2024 연수구 폐의약품 지도 | 모든 권리 보유.</p>
+    </footer>
+</body>
+</html>
